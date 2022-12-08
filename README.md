@@ -1,2 +1,5 @@
-# docker_http_api
-My "wrapper" for docker's http api
+# gumernus's docker_http_api
+
+## functions:
+- listContainers()
+- createContainer()
