@@ -1,4 +1,5 @@
 # gumernus's docker_http_api
+I'm testing it on linux (Debian)
 
 ## functions:
 - listContainers()
