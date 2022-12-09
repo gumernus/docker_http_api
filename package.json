@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/gumernus/docker_http_api/issues"
   },
-  "homepage": "https://github.com/gumernus/docker_http_api#readme",
-  "dependencies": {
-    "undici": "^5.14.0"
-  }
+  "homepage": "https://github.com/gumernus/docker_http_api#readme"
 }
