@@ -1,0 +1,23 @@
+response received 200
+headers {
+  date: 'Fri, 09 Dec 2022 18:04:36 GMT',
+  expires: '-1',
+  'cache-control': 'private, max-age=0',
+  'content-type': 'text/html; charset=ISO-8859-1',
+  'cross-origin-opener-policy-report-only': 'same-origin-allow-popups; report-to="gws"',
+  'report-to': '{"group":"gws","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/gws/other"}]}',
+  p3p: 'CP="This is not a P3P policy! See g.co/p3phelp for more info."',
+  server: 'gws',
+  'x-xss-protection': '0',
+  'x-frame-options': 'SAMEORIGIN',
+  'set-cookie': [
+    'SOCS=CAAaBgiA9cmcBg; expires=Mon, 08-Jan-2024 18:04:36 GMT; path=/; domain=.google.com; Secure; SameSite=lax',
+    'AEC=AakniGN90B0zf8MqOWPS79hjxlmFnvxwl7oneGOiziRXbwREVhFm0AS9i5M; expires=Wed, 07-Jun-2023 18:04:36 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax',
+    '__Secure-ENID=8.SE=AJgc3sQ6GEqlZgEsIdVdQBJG8vR5skVnL_nRtjimgq3NUo2b4cfVZLldNXkGC_sB4LTg4CCeD9CDp1eVA67YQL0M1qqCENCXYHcd8SSmlXJGIbyx6bM7EduH6RJkh408s-2mMT54oRcMRYUl2Q32xjgoncuu2cBEVt-oFu6vNwk; expires=Tue, 09-Jan-2024 10:22:54 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax',
+    'CONSENT=PENDING+977; expires=Sun, 08-Dec-2024 18:04:36 GMT; path=/; domain=.google.com; Secure'
+  ],
+  'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"',
+  'accept-ranges': 'none',
+  vary: 'Accept-Encoding',
+  'transfer-encoding': 'chunked'
+}
