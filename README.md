@@ -1,5 +1,5 @@
 # gumernus's docker_http_api
-I'm testing it on linux (Debian)
+fast, without any additional packages, ES6
 
 ## functions:
 - listContainers()
