@@ -1,4 +1,5 @@
-import { Docker_API } from "../index.js"
+import { Docker } from "../src/index.js"
 
-let docker = new Docker_API("/var/run/docker.sock");
-console.log(docker.listContainers())
+let docker = new Docker();
+
+console.log(await docker.listContainers());

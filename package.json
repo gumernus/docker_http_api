@@ -1,11 +1,11 @@
 {
   "name": "docker_http_api",
   "version": "1.0.0",
-  "description": "I'm testing it on linux (Debian)",
-  "main": "index.js",
+  "description": "Javascript 'wrapper' for docker's http api",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gumernus/docker_http_api/issues"
   },
-  "homepage": "https://github.com/gumernus/docker_http_api#readme"
+  "homepage": "https://github.com/gumernus/docker_http_api#readme",
+  "dependencies": {
+    "papi": "^1.1.1"
+  }
 }
