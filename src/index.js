@@ -1,6 +1,6 @@
 import papi from "papi"
 
-class Docker extends papi.Client {
+export class Docker extends papi.Client {
 
 	constructor(opts) {
 		opts = opts || {};
@@ -26,7 +26,7 @@ class Docker extends papi.Client {
 				"Hostname": name,
 				"HostConfig":{
 					"PortBindings":{
-						"80/tcp":[{"HostPort":"8080"}]
+						"80/tcp":[{"HostPort":"80"}]
 					}
 				},
 				"Tty": true
