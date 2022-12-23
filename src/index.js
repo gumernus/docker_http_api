@@ -1,4 +1,5 @@
 // TODO add custom return so there isnt "undefined" when the action was successful
+// TODO add removeContiner() function 
 
 import papi from "papi"
 
@@ -15,10 +16,12 @@ export class Docker extends papi.Client {
 		super(opts);
   	}
 
+	// CONTAINERS (START)
+
 	async listContainers() {
 		let opts = { path: `/containers/json` }
 		let res = await this._get(opts);
-	    return res.body;
+		return res.body;
   	}
 
 	async clearContainers() { // don't use in prod
@@ -81,4 +84,18 @@ export class Docker extends papi.Client {
 		let res = await this._post(opts);
 		return res.body;
 	}
+
+	// CONTAINERS (END)
+
+	
+
+	
+	// IMAGES (START)
+	
+	async listImages() {
+		let opts = { path: `/images/json` }	
+		let res = await this._get(opts);
+		return res.body;
+	}
+
 }
