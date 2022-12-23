@@ -1,3 +1,5 @@
+// TODO add custom return so there isnt "undefined" when the action was successful
+
 import papi from "papi"
 
 function customErr(text) {
@@ -60,6 +62,14 @@ export class Docker extends papi.Client {
 		let opts = { path: `/containers/${id}/start` }
 		let res = await this._post(opts);
 		return res.body;
+	}
+
+	async stopContainer(id) {
+		let opts = { path: `/containers/${id}/stop` }
+		let res = await this._post(opts);
+		return res.body;
+
+
 	}
 
 	async clearContainers() { // don't use in prod
