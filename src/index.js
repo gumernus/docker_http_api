@@ -21,6 +21,12 @@ export class Docker extends papi.Client {
 	    return res.body;
   	}
 
+	async clearContainers() { // don't use in prod
+		let opts = { path: `/containers/prune` }
+		let res = await this._post(opts);
+		return res.body;
+	}
+
 	async createContainer(options) {
 		if(!options.image) { options.image = customErr(`Image name for the new container was not included.`) }
 		if(!options.name) { options.name = Math.random().toString(36).slice(2, 7) }
@@ -68,14 +74,11 @@ export class Docker extends papi.Client {
 		let opts = { path: `/containers/${id}/stop` }
 		let res = await this._post(opts);
 		return res.body;
-
-
 	}
 
-	async clearContainers() { // don't use in prod
-		let opts = { path: `/containers/prune` }
+	async renameContainer(options) {
+		let opts = { path: `/containers/${options.id}/rename?name=${options.name}` }
 		let res = await this._post(opts);
 		return res.body;
 	}
-
 }
